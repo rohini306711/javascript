@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>javasvript</title>
+	<style type="text/css">
+		form {text-align: center;}
+	</style>
+
+	<script type="text/javascript">
+	 function onSubmit() {
+	 
+    var a = parseInt(document.getElementById("number1").value) ;
+    
+      var b= parseInt(document.getElementById("number2").value) ;
+    
+     alert (a+b);
+     
+  }
+function onSubtract() {
+	  var a,b;
+    var a = parseInt(document.getElementById("number1").value) ;
+    
+      var b= parseInt(document.getElementById("number2").value) ;
+    
+     alert (a-b)
+  }
+
+function onMultiply() {
+	  var a,b;
+    var a = parseInt(document.getElementById("number1").value) ;
+    
+      var b= parseInt(document.getElementById("number2").value) ;
+    
+     alert (a*b)
+  }
+  function onDivide() {
+	  var a,b;
+    var a = parseInt(document.getElementById("number1").value) ;
+    
+      var b= parseInt(document.getElementById("number2").value) ;
+    
+     alert (a/b)
+  }
+</script>
+</head>
+<body>
+
+
+ <form>
+      <label for="number"><b>first no.</b></label><br>
+      <input  type="number" placeholder="Enter no." name="number"  id="number1">
+<br><br>
+      <label  for="number"><b>second no.</b></label><br>
+      <input  type="number" placeholder="Enter no." name="number" id="number2" ><br><br>
+ <button onclick="onSubmit()">
+ 	addition
+ </button>
+
+ <button onclick="onSubtract() ">
+ 	substraction 
+ </button>
+<br><br>
+ <button onclick="onMultiply()">
+ 	multiply
+ </button>
+ 
+ <button onclick="onDivide()">
+ 	division
+ </button>
+ 
+</form>
+
+</body>
+</html>
